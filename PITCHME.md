@@ -60,7 +60,7 @@ State based Vs Migration based
 The Hybrid Approach
 
 
-![Image](./assets/img/ReadyRoll.jpg)
+![Image](./assets/img/RedgateReadyRoll.jpg)
 
 ---
 
