@@ -29,6 +29,9 @@ What do I need for CI?
 
 <br>
 Team buy in
+
+
+<br>
 Tools
 
 ---
@@ -57,7 +60,7 @@ State based Vs Migration based
 The Hybrid Approach
 
 
-![Image](./assets/img/readyroll.jpg)
+![Image](./assets/img/ReadyRoll.jpg)
 ReadyRoll
 
 ---
