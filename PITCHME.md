@@ -61,6 +61,8 @@ The Hybrid Approach
 
 
 ![Image](./assets/img/ReadyRoll.jpg)
+
+
 ReadyRoll
 
 ---
