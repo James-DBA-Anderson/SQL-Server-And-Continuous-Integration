@@ -52,7 +52,7 @@ What can stop us?
 
 
 <br>
-Slow cycles
+Slow cycles<!-- .element: class="fragment" -->
 
 
 * Approvals<!-- .element: class="fragment" -->
