@@ -22,6 +22,10 @@ It's not a suite of tools<!-- .element: class="fragment" -->
 Moving quickly from ideas to production
 <!-- .element: class="fragment" -->
 
+<br>
+Continually integrating
+<!-- .element: class="fragment" -->
+
 ---
 
 What do I need for CI?
@@ -127,10 +131,6 @@ But...<!-- .element: class="fragment" -->
 ---
 
 Test the project against all versions of SQL Server
-
-
-<br>
-No static environments<!-- .element: class="fragment" -->
 
 ---
 
