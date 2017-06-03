@@ -36,6 +36,13 @@ Tools
 
 ---
 
+You don't need the Ferrari of build servers
+
+![Image](./assets/img/Ferrari.jpg)
+![Image](./assets/img/allegro.jpg)<!-- .element: class="fragment" -->
+
+---
+
 What can stop us?
 
 
