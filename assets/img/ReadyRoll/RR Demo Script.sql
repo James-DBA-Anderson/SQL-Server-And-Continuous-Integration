@@ -29,3 +29,35 @@ BEGIN
 	FROM	dbo.Config;
 END
 GO
+
+---------------------------------------------------
+-- Second round of changes
+---------------------------------------------------
+
+ALTER TABLE Config ALTER COLUMN [Value] NVARCHAR(MAX);
+GO
+
+ALTER PROCEDURE ConfigSettings 
+				@Setting NVARCHAR(250) = N'All'
+AS
+BEGIN
+	SELECT	c.Setting,
+			c.[Value]
+	FROM	dbo.Config c
+	WHERE	(
+				(@Setting = N'All')
+				OR
+				(@Setting = c.Value)
+			);
+END
+GO
+
+---------------------------------------------------
+-- Final round of changes
+---------------------------------------------------
+
+INSERT dbo.Config(Setting, Description, Value)
+VALUES	('Active', 'Is the appllication active', 'Y'),
+		('Client', 'The name of the client for this instance', 'The SQL People Ltd'),
+		('Client Email', 'Email address to send reports to', 'James@TheSQLPeople.com'); 
+GO
