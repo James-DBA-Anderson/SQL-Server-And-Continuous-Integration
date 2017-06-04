@@ -149,6 +149,16 @@ http://thedatabaseavenger.com/2016/10/starting-a-readyroll-project/
 
 +++
 
+![Image](./assets/img/ReadyRoll/Shadow database add 2 tables and 1 SP to ReadyRoll database.png)
+
++++
+
+Migration scripts are for stateful objects only.
+
+![Image](./assets/img/ReadyRoll/ReadyRoll migration script.png)
+
++++
+
 ![Image](./assets/img/ReadyRoll/ReadyRoll migration log columns.png)
 
 ---
