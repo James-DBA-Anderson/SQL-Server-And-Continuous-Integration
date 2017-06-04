@@ -161,6 +161,10 @@ Migration scripts are for stateful objects only.
 
 ![Image](./assets/img/ReadyRoll/ReadyRoll migration log columns.png)
 
++++
+
+![Image](./assets/img/ReadyRoll/ReadyRoll deploy script 1.png)
+
 ---
 
 GitLab
