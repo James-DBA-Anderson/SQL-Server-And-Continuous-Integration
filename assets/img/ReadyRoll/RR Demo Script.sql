@@ -1,0 +1,31 @@
+CREATE TABLE Customers 
+(
+	CustomerID INT IDENTITY(1,1) NOT NULL,
+	Title NVARCHAR(25) NOT NULL,
+	FirstName NVARCHAR(100) NOT NULL,
+	LastName NVARCHAR(100) NOT NULL,
+	DOB DATE NOT NULL,
+	CONSTRAINT [PK_CustomerID] PRIMARY KEY CLUSTERED  
+	(
+		[CustomerID] ASC
+	) WITH (PAD_INDEX = ON) ON [PRIMARY]
+) ON [PRIMARY];
+GO
+
+CREATE TABLE Config
+(
+	Setting			NVARCHAR(250) NOT NULL,
+	[Description]	NVARCHAR(1000) NOT NULL,
+	[Value]			NVARCHAR(100) NULL,
+	CONSTRAINT PK_Config_Setting PRIMARY KEY (Setting)
+);
+GO
+
+CREATE PROCEDURE ConfigSettings 
+AS
+BEGIN
+	SELECT	Setting,
+			[Value]
+	FROM	dbo.Config;
+END
+GO

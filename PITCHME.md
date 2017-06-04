@@ -10,6 +10,8 @@ www.TheDatabaseAvenger.com
 <br>
 James@TheSQLPeople.com
 
+http://thedatabaseavenger.com/2016/07/sql-server-and-continuous-integration/
+
 ---
 
 What is CI?
@@ -92,11 +94,11 @@ ReadyRoll Demo
 
 +++
 
-![Image](./assets/img/ReadyRoll/Deploy new ReadyRoll project.png)
+![Image](./assets/img/ReadyRoll/Connect to database.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll/Connect to database.png)
+![Image](./assets/img/ReadyRoll/Deploy new ReadyRoll project.png)
 
 +++
 
@@ -109,6 +111,29 @@ ReadyRoll Demo
 +++
 
 ![Image](./assets/img/ReadyRoll/Importing database.png)
+
++++
+
+![Image](./assets/img/ReadyRoll/ReadyRoll migration log and shadow database.png)
+
++++
+
+![Image](./assets/img/ReadyRoll/ReadyRoll config settings.png)
+
+
+http://thedatabaseavenger.com/2016/10/starting-a-readyroll-project/
+
++++
+
+![Image](./assets/img/ReadyRoll/ReadyRoll offline schema model.png)
+
++++
+
+![Image](./assets/img/ReadyRoll/Add 2 tables and 1 SP to ReadyRoll database.png)
+
++++
+
+![Image](./assets/img/ReadyRoll/ReadyRoll migration log columns.png)
 
 ---
 
