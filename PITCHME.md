@@ -16,7 +16,7 @@ What is CI?
 
 
 <br>
-It's not a suite of tools<!-- .element: class="fragment" -->
+It's not just a suite of tools<!-- .element: class="fragment" -->
 
 <br>
 Moving quickly from ideas to production
@@ -32,11 +32,11 @@ What do I need for CI?
 
 
 <br>
-Team buy in
+Team buy in<!-- .element: class="fragment" -->
 
 
 <br>
-Tools
+Tools<!-- .element: class="fragment" -->
 
 ---
 
@@ -81,6 +81,34 @@ The Hybrid Approach
 ---
 
 ReadyRoll Demo
+
++++
+
+![Image](./assets/img/readyroll/Create new ReadyRoll project.png)
+
++++
+
+![Image](./assets/img/readyroll/Connect to local SQL Server instance.png)
+
++++
+
+![Image](./assets/img/readyroll/Deploy new ReadyRoll project.png)
+
++++
+
+![Image](./assets/img/readyroll/Connect to database.png)
+
++++
+
+![Image](./assets/img/readyroll/Import database.png)
+
++++
+
+![Image](./assets/img/readyroll/Connect to database 2.png)
+
++++
+
+![Image](./assets/img/readyroll/Importing database.png)
 
 ---
 
