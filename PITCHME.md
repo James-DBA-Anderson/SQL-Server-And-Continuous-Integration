@@ -133,6 +133,22 @@ http://thedatabaseavenger.com/2016/10/starting-a-readyroll-project/
 
 +++
 
+![Image](./assets/img/ReadyRoll/ReadyRoll comparing sandbox to Shadow database.png)
+
++++
+
+![Image](./assets/img/ReadyRoll/Changes pending.png)
+
++++
+
+![Image](./assets/img/ReadyRoll/Empty shadow database.png)
+
++++
+
+![Image](./assets/img/ReadyRoll/ReadyRoll import database objects.png)
+
++++
+
 ![Image](./assets/img/ReadyRoll/ReadyRoll migration log columns.png)
 
 ---
