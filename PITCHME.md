@@ -264,38 +264,99 @@ Tests
 * PowerShell<!-- .element: class="fragment" -->
 * Pester<!-- .element: class="fragment" -->
 
+----
+
+Run the Tests Demo
+
 +++
 
-![Image](./assets/img/ReadyRoll/tSQLt.jpg)
+![Image](./assets/img/tSQLt.jpg)
 
 
 http://tsqlt.org/
 
 +++
 
-```powershell
+Create a test class for a new SP
+```sql
 EXEC tSQLt.NewTestClass 'testFinancialApp';
-GO
+```
 
++++
+
+Create new SP to test
+```sql
+CREATE FUNCTION dbo.ConvertCurrency 
+(
+    @rate DECIMAL(10,4), 
+    @amount DECIMAL(10,4)
+)
+RETURNS DECIMAL(10,4)
+AS
+BEGIN
+	DECLARE @Result DECIMAL(10,4);
+
+	SET @Result = (SELECT @amount / @rate);
+
+	RETURN @Result;
+END;
+```
+
++++
+
+```sql
 CREATE PROCEDURE testFinancialApp.[test that ConvertCurrency converts using given conversion rate]
 AS
 BEGIN
-    DECLARE @actual MONEY;
-    DECLARE @rate DECIMAL(10,4); SET @rate = 1.2;
-    DECLARE @amount MONEY; SET @amount = 2.00;
+    DECLARE @actual DECIMAL(10,4);
+    DECLARE @rate DECIMAL(10,4) = 1.2;
+    DECLARE @amount DECIMAL(10,4) = 2.00;
 
-    SELECT @actual = FinancialApp.ConvertCurrency(@rate, @amount);
+    SELECT @actual = dbo.ConvertCurrency(@rate, @amount);
 
-    DECLARE @expected MONEY; SET @expected = 2.4;   --(rate * amount)
+    DECLARE @expected DECIMAL(10,4) = 2.4;  
+
     EXEC tSQLt.AssertEquals @expected, @actual;
-
 END;
-GO
+```
+
++++
+
+Run the tests!
+```sql
+EXEC tSQLt.Run 'testFinancialApp';
+```
+
++++
+
+Fail
+![Image](./assets/img/Tests/First test result.png)
+
++++
+Alter the calculation
+```sql
+ALTER FUNCTION dbo.ConvertCurrency 
+(
+    @rate DECIMAL(10,4), 
+    @amount DECIMAL(10,4)
+)
+RETURNS DECIMAL(10,4)
+AS
+BEGIN
+	DECLARE @Result DECIMAL(10,4);
+
+	SET @Result = (SELECT @amount * @rate);
+
+	RETURN @Result;
+END;
 ```
 
 ---
 
-Run the Tests Demo
++++
+
+Fail
+![Image](./assets/img/Tests/Second test result.png)
 
 ---
 
