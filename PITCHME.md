@@ -1,6 +1,6 @@
 
 
-***SQL Server & Continuous Integration***
+#SQL Server & Continuous Integration
 <br>
 James Anderson
 <br>
@@ -14,15 +14,15 @@ http://thedatabaseavenger.com/2016/07/sql-server-and-continuous-integration/
 
 ---
 
-What is CI?
+##Continuous Integration?
 
-
-<br>
-It's not just a suite of tools<!-- .element: class="fragment" -->
 
 <br>
 Moving quickly from ideas to production
 <!-- .element: class="fragment" -->
+
+<br>
+Catching errors early<!-- .element: class="fragment" -->
 
 <br>
 Continually integrating
@@ -30,15 +30,10 @@ Continually integrating
 
 ---
 
-What do I need for CI?
-
-
-<br>
-Team buy in<!-- .element: class="fragment" -->
-
+##It's not just a suite of tools
 
 <br>
-Tools<!-- .element: class="fragment" -->
+Although, that will be my focus today<!-- .element: class="fragment" -->
 
 ---
 
@@ -51,19 +46,6 @@ You don't need the Ferrari of build servers
 You can still get there for less
 
 ![Image](./assets/img/allegro.jpg)
-
----
-
-What can stop us?
-
-
-<br>
-Slow cycles<!-- .element: class="fragment" -->
-
-
-* Approvals<!-- .element: class="fragment" -->
-* Manual Testing<!-- .element: class="fragment" -->
-* Low buy in<!-- .element: class="fragment" -->
 
 ---
 
