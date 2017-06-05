@@ -90,15 +90,15 @@ ReadyRoll Demo
 
 +++
 
+![Image](./assets/img/ReadyRoll/Deploy new ReadyRoll project.png)
+
++++
+
 ![Image](./assets/img/ReadyRoll/Connect to local SQL Server instance.png)
 
 +++
 
 ![Image](./assets/img/ReadyRoll/Connect to database.png)
-
-+++
-
-![Image](./assets/img/ReadyRoll/Deploy new ReadyRoll project.png)
 
 +++
 
@@ -259,9 +259,39 @@ GO
 
 Tests
 
-<br>
-* tSQLt
-* Pester
+
+* tSQLt<!-- .element: class="fragment" -->
+* PowerShell<!-- .element: class="fragment" -->
+* Pester<!-- .element: class="fragment" -->
+
++++
+
+![Image](./assets/img/ReadyRoll/tSQLt.jpg)
+
+
+http://tsqlt.org/
+
++++
+
+```powershell
+EXEC tSQLt.NewTestClass 'testFinancialApp';
+GO
+
+CREATE PROCEDURE testFinancialApp.[test that ConvertCurrency converts using given conversion rate]
+AS
+BEGIN
+    DECLARE @actual MONEY;
+    DECLARE @rate DECIMAL(10,4); SET @rate = 1.2;
+    DECLARE @amount MONEY; SET @amount = 2.00;
+
+    SELECT @actual = FinancialApp.ConvertCurrency(@rate, @amount);
+
+    DECLARE @expected MONEY; SET @expected = 2.4;   --(rate * amount)
+    EXEC tSQLt.AssertEquals @expected, @actual;
+
+END;
+GO
+```
 
 ---
 
@@ -302,7 +332,10 @@ But...<!-- .element: class="fragment" -->
 
 ---
 
-Test the project against all versions of SQL Server
+Testing locally and against my test server isn't good enough
+
+<br>
+I want to test the project against all versions of SQL Server
 
 ---
 
