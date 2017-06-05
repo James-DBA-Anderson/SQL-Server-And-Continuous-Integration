@@ -257,16 +257,16 @@ GO
 
 ---
 
-Tests
+Unit Tests
 
 
 * tSQLt<!-- .element: class="fragment" -->
 * PowerShell<!-- .element: class="fragment" -->
 * Pester<!-- .element: class="fragment" -->
 
-----
+---
 
-Run the Tests Demo
+tSQLt Demo
 
 +++
 
@@ -351,12 +351,60 @@ BEGIN
 END;
 ```
 
++++
+
+Success!
+![Image](./assets/img/Tests/Second test result.png)
+
 ---
+
+Pester Demo
 
 +++
 
-Fail
-![Image](./assets/img/Tests/Second test result.png)
+Sample Test
+
+```powershell
+Describe "Get-SQLInfo" {
+    It "returns $true" {
+        Get-SQLInfo | Should Be $true
+    }
+}
+```
+
++++
+
+Test Driven Design
+
+
+<br>
+```powershell
+New-Fixture -Path Temp -Name Get-SQLInfo
+```
+
++++
+
+New function
+```powershell
+function Get-SQLInfo {
+}
+```
+
++++
+
+Linked Test Script
+
+```powershell
+$here = Split-Path -Parent $MyInvocation.MyCommand.Path
+$sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path).Replace(".Tests.", ".")
+. "$here\$sut"
+
+Describe "Get-SQLInfo" {
+	It "does something useful" {
+		$true | Should Be $false
+	}
+}
+```
 
 ---
 
