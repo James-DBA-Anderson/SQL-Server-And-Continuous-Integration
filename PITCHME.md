@@ -330,6 +330,7 @@ EXEC tSQLt.Run 'testFinancialApp';
 +++
 
 Fail
+
 ![Image](./assets/img/Tests/First test result.png)
 
 +++
@@ -353,7 +354,8 @@ END;
 
 +++
 
-Success!
+Success
+
 ![Image](./assets/img/Tests/Second test result.png)
 
 ---
@@ -387,6 +389,9 @@ New-Fixture -Path Temp -Name Get-SQLInfo
 New function
 ```powershell
 function Get-SQLInfo {
+	param ($a)
+    
+    if ($a -eq 1) {$true} else {$false}
 }
 ```
 
@@ -400,13 +405,51 @@ $sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path).Replace(".Tests.", ".")
 . "$here\$sut"
 
 Describe "Get-SQLInfo" {
-	It "does something useful" {
-		$true | Should Be $false
+    It "returns $true when `$a = 1" {
+        Get-SQLInfo 1 | Should Be $true
+    }
+	It "returns $false when `$a = 0" {
+        Get-SQLInfo 0 | Should Be $false
+    }
+}
+```
+
++++
+
+Mocking
+
+
+Faking the response of a piece of code that we aren't currently testing<!-- .element: class="fragment" -->
+
++++
+
+Sample Test with Mocking
+
+```powershell
+Context "Get-Random is not random" {
+		Mock Get-Random { return 3 }
+		It "Get-Random returns 3" {
+			Get-SQLInfo | Should be 3
+		}
+	}
+```
+
++++
+
+Sample Test with Mocking Assert
+
+```powershell
+Context "Get-Random is not random" {
+		Mock Get-Random { return 3 }
+		It "Get-Random returns 3" {
+			Get-SQLInfo | Should be 3
+			Assert-MockCalled Get-Random -Exactly 1
+		}
 	}
 }
 ```
 
----
++++
 
 GitLab
 
