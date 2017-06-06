@@ -47,4 +47,9 @@ Describe ("Environment checks for the Pester Max talk") {
             (Get-Process dockerd -ErrorAction SilentlyContinue).Count | Should Be 1
         }
     }
+    Context "Machine" {
+        It "Should be plugged in" {
+            (Get-WmiObject -Class BatteryStatus -Namespace root\wmi).PowerOnline[0] | Should Be $true
+        }
+    }
 }
