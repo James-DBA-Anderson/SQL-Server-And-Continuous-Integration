@@ -475,6 +475,10 @@ Configure a pipeline
 
 Commit a change
 
++++
+
+Review build artifacts
+
 ---
 
 So now we have automatic testing everytime we make a change.
