@@ -495,6 +495,9 @@ But...<!-- .element: class="fragment" -->
 
 I want to test the project against all versions of SQL Server
 
+<br>
+I also want to test upgrading from each version of my project
+
 ---
 
 ![Image](./assets/img/docker.png)
