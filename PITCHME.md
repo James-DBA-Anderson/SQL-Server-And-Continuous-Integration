@@ -1,6 +1,6 @@
 
 
-#SQL Server & Continuous Integration
+##SQL Server & Continuous Integration
 <br>
 James Anderson
 <br>
@@ -49,7 +49,10 @@ You can still get there for less
 
 ---
 
-Why is deploying database changes so difficult?
+Continuous Integration with SQL Server
+
+<br>
+Why is deploying database changes so difficult?<!-- .element: class="fragment" -->
 
 ---
 
@@ -433,7 +436,7 @@ Context "Get-Random is not random" {
 
 +++
 
-GitLab
+`GitLab
 
 
 ![Image](./assets/img/gitlab.png)
@@ -452,6 +455,26 @@ GitLab Features
 
 GitLab Demo
 
++++
+
+Create a project
+
++++
+
+Push existing project to GitLab
+
++++
+
+Configure a runner
+
++++
+
+Configure a pipeline
+
++++
+
+Commit a change
+
 ---
 
 So now we have automatic testing everytime we make a change.
@@ -466,9 +489,6 @@ But...<!-- .element: class="fragment" -->
 
 ---
 
-Testing locally and against my test server isn't good enough
-
-<br>
 I want to test the project against all versions of SQL Server
 
 ---
