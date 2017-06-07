@@ -52,4 +52,12 @@ Describe ("Environment checks for the Pester Max talk") {
             (Get-WmiObject -Class BatteryStatus -Namespace root\wmi).PowerOnline[0] | Should Be $true
         }
     }
+    Context "Files" {
+        It "Presentation repo should be present" {
+            Test-Path "C:\Projects\SQL-Server-And-Continuous-Integration" | Should Be $true
+        }
+        It "Temp folder should be empty" {
+            (Get-ChildItem -Path "C:\Temp").Count | Should Be 0
+        }
+    }
 }

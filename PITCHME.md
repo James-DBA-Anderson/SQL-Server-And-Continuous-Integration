@@ -495,16 +495,41 @@ Assign Runner to a project
 
 +++
 
-Configure a pipeline
+Configure a pipeline with .gitlab-ci.yml 
 
 ```yaml
 job:
   script: '"C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe"'
+  tags:
+    - windows
 ```
 
 +++
 
-Commit a change
+Commit a change to trigger a build
+![Image](./assets/img/GitLab/GitLab CI Build passed.png)
+
++++
+
+.gitlab-ci.yml V2
+
+```yaml
+build:
+  script: 
+  - powershell "& 'C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe' 'RR_Test.sqlproj' /p:TargetServer=LocalHost /p:TargetDatabase=RR_Test /p:Configuration=Release /p:GenerateSqlPackage=True /p:DBDeployOnBuild=True /p:ShadowServer=LocalHost" 
+  tags:
+    - windows
+
+test:
+  script: 
+  - powershell .\TestHarness.ps1 %CI_PROJECT_DIR% 'LocalHost' 'RR_Test'  
+  tags:
+    - windows
+  artifacts:
+    paths:
+    - RR_Test/bin/
+    untracked: true
+```
 
 +++
 
@@ -536,6 +561,20 @@ I also want to test upgrading from each version of my project
 ---
 
 Testing With Docker Demo
+
++++
+
+Enable Hyper-V
+
+Install Docker for Windows
+
++++
+
+Pull an image
+
+```bash
+docker pull  
+```
 
 ---
 
