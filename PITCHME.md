@@ -457,11 +457,25 @@ GitLab Demo
 
 +++
 
-Create a project
+Login with Active Directory
+![Image](./assets/img/GitLab/LoginWithLDAP.png)
 
 +++
 
-Push existing project to GitLab
+![Image](./assets/img/GitLab/Create New GitLab Project.png)
+
++++
+
+GitLab Runners
+
++++
+
+Install Runner Agent
+```bash
+cd c:\Projects\RR_Test
+git remote add origin http://GITLAB/JAnderson/RR_Test.git
+git push -u origin master
+```
 
 +++
 
@@ -469,7 +483,24 @@ Configure a runner
 
 +++
 
+Runner is connected to GitLab
+
+![Image](./assets/img/GitLab/GitLab Runner Connected.png)
+
++++
+
+Assign Runner to a project
+
+![Image](./assets/img/GitLab/GitLab Runner assigned to project.png)
+
++++
+
 Configure a pipeline
+
+```yaml
+job:
+  script: '"C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe"'
+```
 
 +++
 
