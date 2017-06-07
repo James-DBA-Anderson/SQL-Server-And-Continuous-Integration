@@ -573,8 +573,36 @@ Install Docker for Windows
 Pull an image
 
 ```bash
-docker pull  
+docker pull microsoft/mssql-server-windows
 ```
+
++++
+
+Spin up some containers
+
+```bash
+docker run -d -rm -p 1433:1433 -e sa_password=P455W0rd1 -e ACCEPT_EULA=Y microsoft/mssql-server-windows
+```
+
++++
+
+List running containers
+
+```bash
+docker ps
+```
+
++++
+
+Find IP of container
+
+```bash
+docker inspect --format '{{ .NetworkSettings.Networks.nat.IPAddress }}' ContainerID
+```
+
++++
+
+Connect with SSMS
 
 ---
 
