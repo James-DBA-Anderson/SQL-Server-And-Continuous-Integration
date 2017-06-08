@@ -16,17 +16,20 @@ http://thedatabaseavenger.com/2016/07/sql-server-and-continuous-integration/
 
 ##Continuous Integration?
 
-
 <br>
-Moving quickly from ideas to production
+Continually integrating
 <!-- .element: class="fragment" -->
 
 <br>
 Catching errors early<!-- .element: class="fragment" -->
 
 <br>
-Continually integrating
+Moving quickly from ideas to production
 <!-- .element: class="fragment" -->
+
+
+
+
 
 ---
 
@@ -436,7 +439,7 @@ Context "Get-Random is not random" {
 
 ---
 
-`GitLab
+GitLab
 
 
 ![Image](./assets/img/gitlab.png)
@@ -470,7 +473,8 @@ GitLab Runners
 
 +++
 
-Install Runner Agent
+Push project to GitLab
+
 ```bash
 cd c:\Projects\RR_Test
 git remote add origin http://GITLAB/JAnderson/RR_Test.git
@@ -479,19 +483,9 @@ git push -u origin master
 
 +++
 
-Configure a runner
-
-+++
-
 Runner is connected to GitLab
 
 ![Image](./assets/img/GitLab/GitLab Runner Connected.png)
-
-+++
-
-Assign Runner to a project
-
-![Image](./assets/img/GitLab/GitLab Runner assigned to project.png)
 
 +++
 
@@ -552,7 +546,7 @@ But...<!-- .element: class="fragment" -->
 I want to test the project against all versions of SQL Server
 
 <br>
-I also want to test upgrading from each version of my project
+I also want to test upgrading from each version of my project<!-- .element: class="fragment" -->
 
 ---
 

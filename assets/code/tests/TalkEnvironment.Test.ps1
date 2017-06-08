@@ -1,5 +1,5 @@
 ﻿cls
-Describe ("Environment checks for the Pester Max talk") {
+Describe ("Environment checks for the CI talk") {
     Context "Apps" {
         It "ZoomIt should be running" {
             (Get-Process ZoomIt -ErrorAction SilentlyContinue).Count | Should Be 1
