@@ -8,6 +8,12 @@ Describe "Get-SQLInfo" {
     It "returns $true when `$a = 1" {
         Get-SQLInfo 1 | Should Be $true
     }
+    It "returns $false when `$a = 0" {
+        Get-SQLInfo 0 | Should Be $false
+    }
+    It "returns $false when `$a not provided" {
+        Get-SQLInfo | Should Be $false
+    }
 }
 
 
