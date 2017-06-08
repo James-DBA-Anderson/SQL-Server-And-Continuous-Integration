@@ -414,10 +414,10 @@ Faking the response of a piece of code that we aren't currently testing<!-- .ele
 Sample Test with Mocking
 
 ```powershell
-Context "Get-Random is not random" {
+Context "Calls to Get-Random" {
 		Mock Get-Random { return 3 }
 		It "Get-Random returns 3" {
-			Get-SQLInfo | Should be 3
+			Get-SQLInfo | Should be $true
 		}
 	}
 ```
@@ -427,10 +427,10 @@ Context "Get-Random is not random" {
 Sample Test with Mocking Assert
 
 ```powershell
-Context "Get-Random is not random" {
+Context "Calls to Get-Random" {
 		Mock Get-Random { return 3 }
 		It "Get-Random returns 3" {
-			Get-SQLInfo | Should be 3
+			Get-SQLInfo | Should be $true
 			Assert-MockCalled Get-Random -Exactly 1
 		}
 	}
