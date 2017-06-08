@@ -525,10 +525,6 @@ test:
     untracked: true
 ```
 
-+++
-
-Review build artifacts
-
 ---
 
 So now we have automatic testing everytime we make a change.
