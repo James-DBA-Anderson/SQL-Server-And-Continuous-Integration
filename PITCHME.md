@@ -590,9 +590,12 @@ Find IP of container
 docker inspect --format '{{ .NetworkSettings.Networks.nat.IPAddress }}' ContainerID
 ```
 
-+++
+---
 
-Connect with SSMS
+Parallelism, Ultimate Parallelism!
+<br>
+![Image](./assets/img/The Emporer.gif)
+![Image](./assets/img/The Emporer.gif)
 
 ---
 
