@@ -14,6 +14,16 @@ http://thedatabaseavenger.com/2016/07/sql-server-and-continuous-integration/
 
 ---
 
+Agenda
+
+* CI and Data
+* ReadyRoll
+* Testing Databases
+* Build Server
+![Image](./assets/img/All-the-things.jpg)<!-- .element: class="fragment" -->
+
+---
+
 ##Continuous Integration?
 
 <br>
@@ -589,13 +599,6 @@ Find IP of container
 ```bash
 docker inspect --format '{{ .NetworkSettings.Networks.nat.IPAddress }}' ContainerID
 ```
-
----
-
-Parallelism, Ultimate Parallelism!
-<br>
-![Image](./assets/img/The Emporer.gif)
-![Image](./assets/img/The Emporer.gif)
 
 ---
 
