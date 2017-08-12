@@ -25,7 +25,7 @@ Agenda
 
 Agenda
 
-![Image](./assets/img/all-the-things.jpg)<!-- .element: class="fragment" -->
+![Image](./assets/img/all-the-things.jpg)
 
 ---
 
