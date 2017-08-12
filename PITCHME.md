@@ -20,7 +20,7 @@ Agenda
 * ReadyRoll
 * Testing Databases
 * Build Server
-![Image](./assets/img/All-the-things.jpg)<!-- .element: class="fragment" -->
+![Image](./assets/img/all-the-things.jpg)<!-- .element: class="fragment" -->
 
 ---
 
