@@ -14,7 +14,7 @@ http://thedatabaseavenger.com/2016/07/sql-server-and-continuous-integration/
 
 ---
 
-Agenda
+##Agenda
 
 * CI and Data
 * ReadyRoll
@@ -23,7 +23,7 @@ Agenda
 
 ---
 
-Agenda
+##Agenda
 
 ![Image](./assets/img/all-the-things.jpg)
 
@@ -257,6 +257,12 @@ GO
 +++
 
 ![Image](./assets/img/ReadyRoll/Data change script.png)
+
+---
+
+##We're doing it!!
+
+![Video](./assets/img/kid-bike-crash.mp4)<!-- .element: class="fragment" -->
 
 ---
 
