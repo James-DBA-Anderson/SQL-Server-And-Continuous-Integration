@@ -262,7 +262,7 @@ GO
 
 ##We're doing it!!
 
-![Video](./assets/img/kid-bike-crash.mp4)<!-- .element: class="fragment" -->
+![Video](./assets/img/kid-bike-crash.gif)<!-- .element: class="fragment" -->
 
 ---
 
