@@ -1,6 +1,6 @@
 
 
-##SQL Server & Continuous Integration
+## SQL Server & Continuous Integration
 <br>
 James Anderson
 <br>
@@ -14,7 +14,7 @@ http://thedatabaseavenger.com/2016/07/sql-server-and-continuous-integration/
 
 ---
 
-##Agenda
+## Agenda
 
 * CI and Data
 * ReadyRoll
@@ -23,13 +23,13 @@ http://thedatabaseavenger.com/2016/07/sql-server-and-continuous-integration/
 
 ---
 
-##Agenda
+## Agenda
 
 ![Image](./assets/img/all-the-things.jpg)
 
 ---
 
-##Continuous Integration?
+## Continuous Integration?
 
 <br>
 Continually integrating
@@ -48,7 +48,7 @@ Moving quickly from ideas to production
 
 ---
 
-##It's not just a suite of tools
+## It's not just a suite of tools
 
 <br>
 Although, that will be my focus today<!-- .element: class="fragment" -->
@@ -260,7 +260,7 @@ GO
 
 ---
 
-##We're doing it!!
+## We're doing it!!
 
 ![Video](./assets/img/kid-bike-crash.gif)<!-- .element: class="fragment" -->
 
