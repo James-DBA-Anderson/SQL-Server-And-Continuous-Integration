@@ -97,22 +97,6 @@ ReadyRoll Demo
 
 +++
 
-![Image](./assets/img/ReadyRoll/Connect to local SQL Server instance.png)
-
-+++
-
-![Image](./assets/img/ReadyRoll/Connect to database.png)
-
-+++
-
-![Image](./assets/img/ReadyRoll/Import database.png)
-
-+++
-
-![Image](./assets/img/ReadyRoll/Connect to database 2.png)
-
-+++
-
 ![Image](./assets/img/ReadyRoll/Importing database.png)
 
 +++
@@ -159,7 +143,6 @@ CREATE TABLE Config
 	CONSTRAINT PK_Config_Setting PRIMARY KEY (Setting)
 );
 GO
-
 CREATE PROCEDURE ConfigSettings 
 AS
 BEGIN
@@ -491,16 +474,6 @@ Login with Active Directory
 +++
 
 GitLab Runners
-
-+++
-
-Push project to GitLab
-
-```bash
-cd c:\Projects\RR_Test
-git remote add origin http://GITLAB/JAnderson/RR_Test.git
-git push -u origin master
-```
 
 +++
 
