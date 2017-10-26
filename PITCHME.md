@@ -561,7 +561,9 @@ Install Docker for Windows
 Pull an image
 
 ```bash
-docker pull microsoft/mssql-server-windows
+docker pull microsoft/mssql-server-windows-developer
+
+docker pull microsoft/mssql-server-windows-developer:2016-sp1
 ```
 
 +++
@@ -569,7 +571,9 @@ docker pull microsoft/mssql-server-windows
 Spin up some containers
 
 ```bash
-docker run -d -rm -p 1433:1433 -e sa_password=P455W0rd1 -e ACCEPT_EULA=Y microsoft/mssql-server-windows
+docker run -d -rm -p 1433:1433 -e sa_password=P455W0rd1 -e ACCEPT_EULA=Y microsoft/mssql-server-windows-developer
+
+docker run -d -rm -p 1433:1433 -e sa_password=P455W0rd1 -e ACCEPT_EULA=Y microsoft/mssql-server-windows-developer:2016-sp1
 ```
 
 +++
