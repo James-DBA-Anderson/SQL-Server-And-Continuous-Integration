@@ -89,30 +89,30 @@ ReadyRoll Demo
 
 +++
 
-![Image](./assets/img/Create new ReadyRoll project.png)
+![Image](./assets/img/Create-new-ReadyRoll-project.png)
 
 +++
 
-![Image](./assets/img/Deploy new ReadyRoll project.png)
+![Image](./assets/img/Deploy-new-ReadyRoll-project.png)
 
 +++
 
-![Image](./assets/img/Importing database.png)
+![Image](./assets/img/Importing-database.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll migration log and shadow database.png)
+![Image](./assets/img/ReadyRoll-migration-log-and-shadow-database.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll config settings.png)
+![Image](./assets/img/ReadyRoll-config-settings.png)
 
 
 http://thedatabaseavenger.com/2016/10/starting-a-readyroll-project/
 
 +++
 
-![Image](./assets/img/ReadyRoll offline schema model.png)
+![Image](./assets/img/ReadyRoll-offline-schema-model.png)
 
 +++
 
@@ -154,41 +154,41 @@ END
 
 +++
 
-![Image](./assets/img/Add 2 tables and 1 SP to ReadyRoll database.png)
+![Image](./assets/img/Add-2-tables-and-1-SP-to-ReadyRoll-database.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll comparing sandbox to Shadow database.png)
+![Image](./assets/img/ReadyRoll-comparing-sandbox-to-Shadow-database.png)
 
 +++
 
-![Image](./assets/img/Changes pending.png)
+![Image](./assets/img/Changes-pending.png)
 
 +++
 
-![Image](./assets/img/Empty shadow database.png)
+![Image](./assets/img/Empty-shadow-database.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll import database objects.png)
+![Image](./assets/img/ReadyRoll-import-database-objects.png)
 
 +++
 
-![Image](./assets/img/Shadow database add 2 tables and 1 SP to ReadyRoll database.png)
+![Image](./assets/img/Shadow-database-add-2-tables-and-1-SP-to-ReadyRoll-database.png)
 
 +++
 
 Migration scripts are for stateful objects only.
 
-![Image](./assets/img/ReadyRoll migration script.png)
+![Image](./assets/img/ReadyRoll-migration-script.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll migration log columns.png)
+![Image](./assets/img/ReadyRoll-migration-log-columns.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll deploy script 1.png)
+![Image](./assets/img/ReadyRoll-deploy-script-1.png)
 
 +++
 
@@ -213,11 +213,11 @@ END
 
 +++
 
-![Image](./assets/img/Changes pending 2.png)
+![Image](./assets/img/Changes-pending-2.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll migration script 2.png)
+![Image](./assets/img/ReadyRoll-migration-script-2.png)
 
 +++
 
@@ -225,7 +225,7 @@ Reference Data
 
 +++
 
-![Image](./assets/img/ReadyRoll include table data.png)
+![Image](./assets/img/ReadyRoll-include-table-data.png)
 
 +++
 
@@ -239,11 +239,11 @@ GO
 
 +++
 
-![Image](./assets/img/Data changes pending.png)
+![Image](./assets/img/Data-changes-pending.png)
 
 +++
 
-![Image](./assets/img/Data change script.png)
+![Image](./assets/img/Data-change-script.png)
 
 ---
 
@@ -327,7 +327,7 @@ EXEC tSQLt.Run 'testFinancialApp';
 
 Fail
 
-![Image](./assets/img/First test result.png)
+![Image](./assets/img/First-test-result.png)
 
 +++
 Alter the calculation
@@ -352,7 +352,7 @@ END;
 
 Success
 
-![Image](./assets/img/Second test result.png)
+![Image](./assets/img/Second-test-result.png)
 
 ---
 
@@ -473,7 +473,7 @@ Login with Active Directory
 
 +++
 
-![Image](./assets/img/Create New GitLab Project.png)
+![Image](./assets/img/Create-New-GitLab-Project.png)
 
 +++
 
@@ -483,7 +483,7 @@ GitLab Runners
 
 Runner is connected to GitLab
 
-![Image](./assets/img/GitLab Runner Connected.png)
+![Image](./assets/img/GitLab-Runner-Connected.png)
 
 +++
 
@@ -499,7 +499,7 @@ job:
 +++
 
 Commit a change to trigger a build
-![Image](./assets/img/GitLab CI Build passed.png)
+![Image](./assets/img/GitLab-CI-Build-passed.png)
 
 +++
 
