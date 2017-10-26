@@ -1,21 +1,15 @@
 
 docker images
 
-docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=P455word1 -p 6666:1433  -d microsoft/mssql-server-windows
+docker run -d -rm -p 1433:1433 -e sa_password=P455W0rd1 -e ACCEPT_EULA=Y microsoft/mssql-server-windows-developer
+
+docker ps
+
+docker run -d -rm -p 1433:1433 -e sa_password=P455W0rd1 -e ACCEPT_EULA=Y microsoft/mssql-server-windows-developer:2016-sp1
 
 docker ps
 
 docker stop @ID
 
-docker start @ID
 
-docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=P455word1 -p 6665:1433 -rm -d microsoft/mssql-server-windows
-
-docker stop @ID1 @ID
-
-docker ps
-
-docker ps -a
-
-docker rm @ID1 @ID2
 
