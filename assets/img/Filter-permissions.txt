@@ -1,0 +1,10 @@
+<!-- Shared Developer/DBA options -->
+    <SyncOptionIgnoreUserProperties>True</SyncOptionIgnoreUserProperties>
+    <SyncOptionIgnoreUsersPermissionsAndRoleMemberships>True</SyncOptionIgnoreUsersPermissionsAndRoleMemberships>
+	
+	<!-- Exclude specific objects from being scripted, by object type & object name (using regular expression for name) -->
+    <ExcludeObjectsFromImport>
+      Credential=\[mycredential\];
+      Role=\[myrole\];
+      User=\[myusername\];
+    </ExcludeObjectsFromImport>

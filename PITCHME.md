@@ -93,26 +93,50 @@ ReadyRoll Demo
 
 +++
 
-![Image](./assets/img/Deploy-new-ReadyRoll-project.png)
+![Image](./assets/img/Set-up-a-new-ReadyRoll-project.png)
 
 +++
 
-![Image](./assets/img/Importing-database.png)
+![Image](./assets/img/Setup-database-connections.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll-migration-log-and-shadow-database.png)
+![Image](./assets/img/Configured-database-connections.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll-config-settings.png)
-
-
-http://thedatabaseavenger.com/2016/10/starting-a-readyroll-project/
+![Image](./assets/img/Configure-project-settings-1.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll-offline-schema-model.png)
+![Image](./assets/img/Configure-project-settings-2.png)
+
++++
+
+```xml
+<!-- Shared Developer/DBA options -->
+<SyncOptionIgnoreUserProperties>True</SyncOptionIgnoreUserProperties>
+<SyncOptionIgnoreUsersPermissionsAndRoleMemberships>True</SyncOptionIgnoreUsersPermissionsAndRoleMemberships>
+
+<!-- Exclude specific objects from being scripted, by object type & object name (using regular expression for name) -->
+<ExcludeObjectsFromImport>
+  Credential=\[mycredential\];
+  Role=\[myrole\];
+  User=\[myusername\];
+</ExcludeObjectsFromImport>
+```
+
++++
+
+![Image](./assets/img/Create-baseline.png)
+
++++
+
+![Image](./assets/img/Creating-baseline.png)
+
++++
+
+![Image](./assets/img/ReadyRoll-system-tables.png)
 
 +++
 
