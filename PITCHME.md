@@ -140,6 +140,10 @@ ReadyRoll Demo
 
 +++
 
+![Image](./assets/img/ReadyRoll-folder-structure.png)
+
++++
+
 ```sql
 CREATE TABLE Customers 
 (
@@ -155,6 +159,14 @@ CREATE TABLE Customers
 ) ON [PRIMARY];
 GO
 ```
+
++++
+
+![Image](./assets/img/Add-table-to-ReadyRoll-database.png)
+
++++
+
+![Image](./assets/img/New-migration-script.png)
 
 +++
 
@@ -178,27 +190,19 @@ END
 
 +++
 
-![Image](./assets/img/Add-2-tables-and-1-SP-to-ReadyRoll-database.png)
+![Image](./assets/img/Add-table-and-sp.png)
 
-+++
 
-![Image](./assets/img/ReadyRoll-comparing-sandbox-to-Shadow-database.png)
 
-+++
 
-![Image](./assets/img/Changes-pending.png)
 
-+++
 
-![Image](./assets/img/Empty-shadow-database.png)
 
-+++
 
-![Image](./assets/img/ReadyRoll-import-database-objects.png)
 
-+++
 
-![Image](./assets/img/Shadow-database-add-2-tables-and-1-SP-to-ReadyRoll-database.png)
+
+
 
 +++
 
