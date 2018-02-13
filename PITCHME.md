@@ -97,7 +97,7 @@ ReadyRoll Demo
 
 +++
 
-![Image](./assets/img/Setup-database-connections.png)
+![Image](./assets/img/Set-up-database-connections.png)
 
 +++
 
