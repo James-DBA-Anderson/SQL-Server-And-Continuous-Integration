@@ -192,18 +192,6 @@ END
 
 ![Image](./assets/img/Add-table-and-sp.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
 +++
 
 Migration scripts are for stateful objects only.
@@ -260,8 +248,8 @@ Reference Data
 ```sql
 INSERT dbo.Config(Setting, Description, Value)
 VALUES	('Active', 'Is the appllication active', 'Y'),
-		('Client', 'The name of the client for this instance', 'The SQL People Ltd'),
-		('Client Email', 'Email address to send reports to', 'James@TheSQLPeople.com'); 
+		('Client', 'The name of the client', 'The SQL People Ltd'),
+		('Client Email', 'Email address', 'James@TheSQLPeople.com'); 
 GO
 ```
 
@@ -281,7 +269,7 @@ GO
 
 ---
 
-Unit Tests
+Testing
 
 
 * tSQLt<!-- .element: class="fragment" -->
