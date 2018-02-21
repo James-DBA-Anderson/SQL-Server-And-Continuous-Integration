@@ -26,14 +26,7 @@ http://thedatabaseavenger.com/2016/07/sql-server-and-continuous-integration/
 ## Continuous Integration?
 
 <br>
-Continually integrating
-<!-- .element: class="fragment" -->
-
-<br>
-Catching errors early<!-- .element: class="fragment" -->
-
-<br>
-Moving quickly from ideas to production
+Continually integrating code
 <!-- .element: class="fragment" -->
 
 ---
@@ -100,21 +93,6 @@ ReadyRoll Demo
 +++
 
 ![Image](./assets/img/Configure-project-settings-2.png)
-
-+++
-
-```xml
-<!-- Shared Developer/DBA options -->
-<SyncOptionIgnoreUserProperties>True</SyncOptionIgnoreUserProperties>
-<SyncOptionIgnoreUsersPermissionsAndRoleMemberships>True</SyncOptionIgnoreUsersPermissionsAndRoleMemberships>
-
-<!-- Exclude specific objects from being scripted, by object type & object name (using regular expression for name) -->
-<ExcludeObjectsFromImport>
-  Credential=\[mycredential\];
-  Role=\[myrole\];
-  User=\[myusername\];
-</ExcludeObjectsFromImport>
-```
 
 +++
 
@@ -551,10 +529,6 @@ I also want to test upgrading from each version of my project<!-- .element: clas
 ---
 
 ![Image](./assets/img/docker.png)
-
----
-
-Testing With Docker Demo
 
 +++
 
