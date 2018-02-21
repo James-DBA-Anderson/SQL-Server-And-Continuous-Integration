@@ -1,4 +1,5 @@
 ﻿cls
+
 Describe ("Environment checks for the CI talk") {
     Context "Apps" {
         It "ZoomIt should be running" {
