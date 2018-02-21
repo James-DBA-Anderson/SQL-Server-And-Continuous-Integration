@@ -23,12 +23,6 @@ http://thedatabaseavenger.com/2016/07/sql-server-and-continuous-integration/
 
 ---
 
-## Agenda
-
-![Image](./assets/img/all-the-things.jpg)
-
----
-
 ## Continuous Integration?
 
 <br>
@@ -41,10 +35,6 @@ Catching errors early<!-- .element: class="fragment" -->
 <br>
 Moving quickly from ideas to production
 <!-- .element: class="fragment" -->
-
-
-
-
 
 ---
 
