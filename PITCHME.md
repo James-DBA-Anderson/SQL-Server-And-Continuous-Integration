@@ -10,8 +10,6 @@ www.TheDatabaseAvenger.com
 <br>
 James@TheSQLPeople.com
 
-http://thedatabaseavenger.com/2016/07/sql-server-and-continuous-integration/
-
 ---
 
 ## Agenda
