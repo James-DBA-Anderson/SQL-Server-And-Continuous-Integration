@@ -514,62 +514,20 @@ So now we have automatic testing everytime we make a change.
 
 All is good<!-- .element: class="fragment" -->
 
++++
 
+# But
 
-But...<!-- .element: class="fragment" -->
-
----
++++
 
 I want to test the project against all versions of SQL Server
 
 <br>
 I also want to test upgrading from each version of my project<!-- .element: class="fragment" -->
 
----
++++
 
 ![Image](./assets/img/docker.png)
-
-+++
-
-Enable Hyper-V
-
-Install Docker for Windows
-
-+++
-
-Pull an image
-
-```bash
-docker pull microsoft/mssql-server-windows-developer
-
-docker pull microsoft/mssql-server-windows-developer:2016-sp1
-```
-
-+++
-
-Spin up some containers
-
-```bash
-docker run -d -rm -p 1433:1433 -e sa_password=P455W0rd1 -e ACCEPT_EULA=Y microsoft/mssql-server-windows-developer
-
-docker run -d -rm -p 1433:1433 -e sa_password=P455W0rd1 -e ACCEPT_EULA=Y microsoft/mssql-server-windows-developer:2016-sp1
-```
-
-+++
-
-List running containers
-
-```bash
-docker ps
-```
-
-+++
-
-Find IP of container
-
-```bash
-docker inspect --format '{{ .NetworkSettings.Networks.nat.IPAddress }}' ContainerID
-```
 
 ---
 
