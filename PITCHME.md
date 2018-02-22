@@ -16,9 +16,9 @@ James@TheSQLPeople.com
 ## Agenda
 
 * CI and Data
-* ReadyRoll
-* Testing Databases
-* Build Server
+* Deploying DB changes
+* Testing
+* Automation
 
 ---
 
