@@ -67,7 +67,7 @@ The Hybrid Approach
 
 ---
 
-ReadyRoll Demo
+Let's take a look at ReadyRoll
 
 +++
 
@@ -167,14 +167,6 @@ Migration scripts are for stateful objects only.
 
 +++
 
-![Image](./assets/img/ReadyRoll-migration-log-columns.png)
-
-+++
-
-![Image](./assets/img/ReadyRoll-deploy-script-1.png)
-
-+++
-
 ```sql
 ALTER TABLE Config ALTER COLUMN [Value] NVARCHAR(MAX);
 GO
@@ -183,8 +175,7 @@ ALTER PROCEDURE ConfigSettings
 				@Setting NVARCHAR(250) = N'All'
 AS
 BEGIN
-	SELECT	c.Setting,
-			c.[Value]
+	SELECT	c.Setting, c.[Value]
 	FROM	dbo.Config c
 	WHERE	(
 				(@Setting = N'All')
@@ -244,10 +235,6 @@ Testing
 * Pester<!-- .element: class="fragment" -->
 
 ---
-
-tSQLt Demo
-
-+++
 
 ![Image](./assets/img/tSQLt.jpg)
 
@@ -447,7 +434,7 @@ GitLab Features
 
 ---
 
-GitLab Demo
+A Quick Tour of GitLab
 
 +++
 

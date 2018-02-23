@@ -44,28 +44,14 @@ Describe ("Environment checks for the CI talk") {
             (Get-Process Dropbox -ErrorAction SilentlyContinue).Count | Should Be 0
         }
     }
-    Context "Docker" {
-        It "Docker for Windows should be running" {
-            (Get-Process 'Docker for Windows' -ErrorAction SilentlyContinue).Count | Should Be 1
-        }
-        It "The docker deamon should be running" {
-            (Get-Process dockerd -ErrorAction SilentlyContinue).Count | Should Be 1
-        }
-        It "No containers should be running" {
-            (docker ps).Count | Should Be 1
-        }
-    }
     Context "Machine" {
         It "Should be plugged in" {
             (Get-WmiObject -Class BatteryStatus -Namespace root\wmi).PowerOnline[0] | Should Be $true
         }
     }
     Context "Files" {
-        It "Presentation repo should be present" {
-            Test-Path "C:\Projects\SQL-Server-And-Continuous-Integration" | Should Be $true
-        }
-        It "Temp folder should be empty" {
-            (Get-ChildItem -Path "C:\Temp").Count | Should Be 0
+        It "Presentation should be present" {
+            Test-Path "C:\Presentations\SQL Server & Continuous Integration\index.html" | Should Be $true
         }
     }
 }
