@@ -518,6 +518,18 @@ I also want to test upgrading from each version of my project<!-- .element: clas
 
 ---
 
+We love to get feedback
+
+Please complete the session feedback forms
+
+---
+
+## SQLBits - It's all about the community...
+
+Please visit Community Corner, we are trying this year to get more people to learn about the SQL Community, equally if you would be happy to visit the community corner we’d really appreciate it.
+
+---
+
 Thanks for listening
 <br>
 <br>
