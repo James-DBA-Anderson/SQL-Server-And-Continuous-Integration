@@ -132,9 +132,9 @@ GO
 ```sql
 CREATE TABLE Config
 (
-	Setting			NVARCHAR(250) NOT NULL,
-	[Description]	NVARCHAR(1000) NOT NULL,
-	[Value]			NVARCHAR(100) NULL,
+	Setting NVARCHAR(250) NOT NULL,
+	[Description] NVARCHAR(1000) NOT NULL,
+	[Value] NVARCHAR(100) NULL,
 	CONSTRAINT PK_Config_Setting PRIMARY KEY (Setting)
 );
 GO
