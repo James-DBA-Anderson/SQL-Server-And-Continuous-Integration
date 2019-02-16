@@ -63,7 +63,7 @@ State based Vs Migration based
 The Hybrid Approach
 
 
-![Image](./assets/img/RedgateReadyRoll.jpg)
+![Image](./assets/img/sqlchangeautomation-logo.png)
 
 ---
 
