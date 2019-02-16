@@ -79,10 +79,6 @@ Let's take a look at SQL Change Automation
 
 +++
 
-![Image](./assets/img/Set-up-database-connections.png)
-
-+++
-
 ![Image](./assets/img/Configured-database-connections.png)
 
 +++
