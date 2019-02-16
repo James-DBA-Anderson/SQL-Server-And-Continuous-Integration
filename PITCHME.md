@@ -83,11 +83,11 @@ Let's take a look at SQL Change Automation
 
 +++
 
-![Image](./assets/img/Configure-project-settings.png)
+![Image](./assets/img/Create-baseline.png)
 
 +++
 
-![Image](./assets/img/Create-baseline.png)
+![Image](./assets/img/Configure-project-settings.png)
 
 +++
 
@@ -95,7 +95,7 @@ Let's take a look at SQL Change Automation
 
 +++
 
-![Image](./assets/img/ReadyRoll-system-tables.png)
+![Image](./assets/img/SCA-system-tables.png)
 
 +++
 
