@@ -216,7 +216,7 @@ GO
 
 ## We're doing it!!
 
-![Video](./assets/img/kid-bike-crash.gif)<!-- .element: class="fragment" -->
+![Video](./assets/img/doing-it.gif)<!-- .element: class="fragment" -->
 
 ---
 
