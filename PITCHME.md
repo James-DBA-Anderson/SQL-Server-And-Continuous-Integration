@@ -99,7 +99,7 @@ Let's take a look at SQL Change Automation
 
 +++
 
-![Image](./assets/img/ReadyRoll-folder-structure.png)
+![Image](./assets/img/SCA-folder-structure.png)
 
 +++
 
