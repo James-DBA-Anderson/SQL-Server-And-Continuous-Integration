@@ -191,15 +191,16 @@ Reference Data
 
 +++
 
-![Image](./assets/img/ReadyRoll-include-table-data.png)
+![Image](./assets/img/SCA-include-table-data.png)
 
 +++
 
 ```sql
 INSERT dbo.Config(Setting, Description, Value)
-VALUES	('Active', 'Is the appllication active', 'Y'),
-		('Client', 'The name of the client', 'The SQL People Ltd'),
-		('Client Email', 'Email address', 'James@TheSQLPeople.com'); 
+VALUES
+('Active', 'Is the appllication active', 'Y'),
+('Client', 'The name of the client', 'The SQL People Ltd'),
+('Client Email', 'Email address', 'James@TheSQLPeople.com');
 GO
 ```
 
