@@ -75,7 +75,7 @@ Let's take a look at SQL Change Automation
 
 +++
 
-![Image](./assets/img/Set-up-a-new-ReadyRoll-project.png)
+![Image](./assets/img/Set-up-a-new-SCA-project.png)
 
 +++
 
