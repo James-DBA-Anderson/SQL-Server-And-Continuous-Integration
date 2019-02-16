@@ -83,11 +83,7 @@ Let's take a look at SQL Change Automation
 
 +++
 
-![Image](./assets/img/Configure-project-settings-1.png)
-
-+++
-
-![Image](./assets/img/Configure-project-settings-2.png)
+![Image](./assets/img/Configure-project-settings.png)
 
 +++
 
