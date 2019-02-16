@@ -4,47 +4,29 @@
 <br>
 James Anderson
 <br>
+
 www.TheDatabaseAvenger.com
 <br>
 @DatabaseAvenger
 <br>
 James@TheSQLPeople.com
 
-http://thedatabaseavenger.com/2016/07/sql-server-and-continuous-integration/
-
 ---
 
 ## Agenda
 
 * CI and Data
-* ReadyRoll
-* Testing Databases
-* Build Server
-
----
-
-## Agenda
-
-![Image](./assets/img/all-the-things.jpg)
+* Deploying DB changes
+* Testing
+* Automation
 
 ---
 
 ## Continuous Integration?
 
 <br>
-Continually integrating
+Continually integrating code
 <!-- .element: class="fragment" -->
-
-<br>
-Catching errors early<!-- .element: class="fragment" -->
-
-<br>
-Moving quickly from ideas to production
-<!-- .element: class="fragment" -->
-
-
-
-
 
 ---
 
@@ -81,38 +63,43 @@ State based Vs Migration based
 The Hybrid Approach
 
 
-![Image](./assets/img/RedgateReadyRoll.jpg)
+![Image](./assets/img/sqlchangeautomation-logo.png)
 
 ---
 
-ReadyRoll Demo
+Let's take a look at SQL Change Automation
 
 +++
 
-![Image](./assets/img/Create-new-ReadyRoll-project.png)
+![Image](./assets/img/Create-new-SCA-project.png)
 
 +++
 
-![Image](./assets/img/Deploy-new-ReadyRoll-project.png)
+![Image](./assets/img/Set-up-a-new-SCA-project.png)
 
 +++
 
-![Image](./assets/img/Importing-database.png)
+![Image](./assets/img/Configured-database-connections.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll-migration-log-and-shadow-database.png)
+![Image](./assets/img/Create-baseline.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll-config-settings.png)
-
-
-http://thedatabaseavenger.com/2016/10/starting-a-readyroll-project/
+![Image](./assets/img/Configure-project-settings.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll-offline-schema-model.png)
+![Image](./assets/img/Creating-baseline.png)
+
++++
+
+![Image](./assets/img/SCA-system-tables.png)
+
++++
+
+![Image](./assets/img/SCA-folder-structure.png)
 
 +++
 
@@ -134,12 +121,20 @@ GO
 
 +++
 
+![Image](./assets/img/Add-table-to-SCA-database.png)
+
++++
+
+![Image](./assets/img/New-migration-script.png)
+
++++
+
 ```sql
 CREATE TABLE Config
 (
-	Setting			NVARCHAR(250) NOT NULL,
-	[Description]	NVARCHAR(1000) NOT NULL,
-	[Value]			NVARCHAR(100) NULL,
+	Setting NVARCHAR(250) NOT NULL,
+	[Description] NVARCHAR(1000) NOT NULL,
+	[Value] NVARCHAR(100) NULL,
 	CONSTRAINT PK_Config_Setting PRIMARY KEY (Setting)
 );
 GO
@@ -154,41 +149,13 @@ END
 
 +++
 
-![Image](./assets/img/Add-2-tables-and-1-SP-to-ReadyRoll-database.png)
-
-+++
-
-![Image](./assets/img/ReadyRoll-comparing-sandbox-to-Shadow-database.png)
-
-+++
-
-![Image](./assets/img/Changes-pending.png)
-
-+++
-
-![Image](./assets/img/Empty-shadow-database.png)
-
-+++
-
-![Image](./assets/img/ReadyRoll-import-database-objects.png)
-
-+++
-
-![Image](./assets/img/Shadow-database-add-2-tables-and-1-SP-to-ReadyRoll-database.png)
+![Image](./assets/img/Add-table-and-sp.png)
 
 +++
 
 Migration scripts are for stateful objects only.
 
-![Image](./assets/img/ReadyRoll-migration-script.png)
-
-+++
-
-![Image](./assets/img/ReadyRoll-migration-log-columns.png)
-
-+++
-
-![Image](./assets/img/ReadyRoll-deploy-script-1.png)
+![Image](./assets/img/Stateful-migration-script.png)
 
 +++
 
@@ -200,8 +167,7 @@ ALTER PROCEDURE ConfigSettings
 				@Setting NVARCHAR(250) = N'All'
 AS
 BEGIN
-	SELECT	c.Setting,
-			c.[Value]
+	SELECT	c.Setting, c.[Value]
 	FROM	dbo.Config c
 	WHERE	(
 				(@Setting = N'All')
@@ -213,11 +179,11 @@ END
 
 +++
 
-![Image](./assets/img/Changes-pending-2.png)
+![Image](./assets/img/Changes-pending.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll-migration-script-2.png)
+![Image](./assets/img/SCA-migration-script-2.png)
 
 +++
 
@@ -225,15 +191,16 @@ Reference Data
 
 +++
 
-![Image](./assets/img/ReadyRoll-include-table-data.png)
+![Image](./assets/img/SCA-include-table-data.png)
 
 +++
 
 ```sql
 INSERT dbo.Config(Setting, Description, Value)
-VALUES	('Active', 'Is the appllication active', 'Y'),
-		('Client', 'The name of the client for this instance', 'The SQL People Ltd'),
-		('Client Email', 'Email address to send reports to', 'James@TheSQLPeople.com'); 
+VALUES
+('Active', 'Is the appllication active', 'Y'),
+('Client', 'The name of the client', 'The SQL People Ltd'),
+('Client Email', 'Email address', 'James@TheSQLPeople.com');
 GO
 ```
 
@@ -249,11 +216,11 @@ GO
 
 ## We're doing it!!
 
-![Video](./assets/img/kid-bike-crash.gif)<!-- .element: class="fragment" -->
+![Video](./assets/img/doing-it.gif)<!-- .element: class="fragment" -->
 
 ---
 
-Unit Tests
+Testing
 
 
 * tSQLt<!-- .element: class="fragment" -->
@@ -261,10 +228,6 @@ Unit Tests
 * Pester<!-- .element: class="fragment" -->
 
 ---
-
-tSQLt Demo
-
-+++
 
 ![Image](./assets/img/tSQLt.jpg)
 
@@ -464,7 +427,7 @@ GitLab Features
 
 ---
 
-GitLab Demo
+A Quick Tour of GitLab
 
 +++
 
@@ -531,66 +494,20 @@ So now we have automatic testing everytime we make a change.
 
 All is good<!-- .element: class="fragment" -->
 
++++
 
+# But
 
-But...<!-- .element: class="fragment" -->
-
----
++++
 
 I want to test the project against all versions of SQL Server
 
 <br>
 I also want to test upgrading from each version of my project<!-- .element: class="fragment" -->
 
----
++++
 
 ![Image](./assets/img/docker.png)
-
----
-
-Testing With Docker Demo
-
-+++
-
-Enable Hyper-V
-
-Install Docker for Windows
-
-+++
-
-Pull an image
-
-```bash
-docker pull microsoft/mssql-server-windows-developer
-
-docker pull microsoft/mssql-server-windows-developer:2016-sp1
-```
-
-+++
-
-Spin up some containers
-
-```bash
-docker run -d -rm -p 1433:1433 -e sa_password=P455W0rd1 -e ACCEPT_EULA=Y microsoft/mssql-server-windows-developer
-
-docker run -d -rm -p 1433:1433 -e sa_password=P455W0rd1 -e ACCEPT_EULA=Y microsoft/mssql-server-windows-developer:2016-sp1
-```
-
-+++
-
-List running containers
-
-```bash
-docker ps
-```
-
-+++
-
-Find IP of container
-
-```bash
-docker inspect --format '{{ .NetworkSettings.Networks.nat.IPAddress }}' ContainerID
-```
 
 ---
 
