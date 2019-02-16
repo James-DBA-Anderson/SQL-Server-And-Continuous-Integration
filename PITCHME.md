@@ -121,7 +121,7 @@ GO
 
 +++
 
-![Image](./assets/img/Add-table-to-ReadyRoll-database.png)
+![Image](./assets/img/Add-table-to-SCA-database.png)
 
 +++
 
