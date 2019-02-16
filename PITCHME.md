@@ -67,11 +67,11 @@ The Hybrid Approach
 
 ---
 
-Let's take a look at ReadyRoll
+Let's take a look at SQL Change Automation
 
 +++
 
-![Image](./assets/img/Create-new-ReadyRoll-project.png)
+![Image](./assets/img/Create-new-SCA-project.png)
 
 +++
 
