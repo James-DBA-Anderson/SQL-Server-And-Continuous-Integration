@@ -155,7 +155,7 @@ END
 
 Migration scripts are for stateful objects only.
 
-![Image](./assets/img/ReadyRoll-migration-script.png)
+![Image](./assets/img/Stateful-migration-script.png)
 
 +++
 
@@ -179,11 +179,11 @@ END
 
 +++
 
-![Image](./assets/img/Changes-pending-2.png)
+![Image](./assets/img/Changes-pending.png)
 
 +++
 
-![Image](./assets/img/ReadyRoll-migration-script-2.png)
+![Image](./assets/img/SCA-migration-script-2.png)
 
 +++
 
